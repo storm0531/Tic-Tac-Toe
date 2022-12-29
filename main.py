@@ -1,33 +1,10 @@
-import numpy as np
 import  random
+
 list = [["-","2","-"],
         ["-","-","-"],
         ["-","-","-"],]
 signs = ["X","O"]
 
-for i in range(3):
-    index = list[i].index("-")
-    if index:
-        list[i][index] = "2"
-print(list)
-# # problem with array condtional if an whole row not for element
-# def is_winner(board):
-#     for i in range(3):
-#         if str(board[i]) == ["X","X","X"] or str(board[:,i]) == ["X","X","X"]:
-#             print("you won")
-#             return True
-#         elif str(board[i]) == ["O", "O", "O"] or str(board[:,i]) == ["O", "O", "O"]:
-#             print("you lost")
-#             return True
-#         elif board[1 ,1] == "O":
-#             if board[0, 0] == "O" or board[0,2] == "O" and board[2, 0] == "O" or board[2,2] == "O":
-#                 print("you lost")
-#                 return True
-#             elif board[0, 0] == "X" or board[0,2] == "X" and board[2, 0] == "X" or board[2,2] == "X":
-#                 print("you lost")
-#                 return True
-#         else:
-#             return False
 
 def show_board(board):
     for row in board:
@@ -96,7 +73,7 @@ def game():
             # for i in range(3):
             #     index = list[i].index("-")
             #     if index:
-            #         board[i][index] = "O"
+            #         board[i][index] = pc_sign
             #         break
             #     else:
             #         continue
